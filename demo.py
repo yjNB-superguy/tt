@@ -6,7 +6,11 @@ from surprise import SVD, Dataset, Reader
 @st.cache_data
 def load_data():
     # Load the data
+<<<<<<< HEAD
     data_df = pd.read_excel('tt/[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
+=======
+    data_df = pd.read_excel('./[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
+>>>>>>> e972a789f77eb5f5fcbb96f5b2bab1ca15075b12
     # Delete columns[0]
     data_df = data_df.drop(data_df.columns[0], axis=1)
     # Rename columns to match with jokes dataframe
@@ -20,7 +24,11 @@ def load_data():
     data_df = data_df[data_df['rating'] != 99.0]
 
     # Load the jokes
+<<<<<<< HEAD
     jokes_df = pd.read_excel('tt/Dataset4JokeSet.xlsx', header=None)
+=======
+    jokes_df = pd.read_excel('./Dataset4JokeSet.xlsx', header=None)
+>>>>>>> e972a789f77eb5f5fcbb96f5b2bab1ca15075b12
     jokes_df.columns = ['joke']
     jokes_df.index.name = 'joke_id'
 
