@@ -7,7 +7,7 @@ from surprise import SVD, Dataset, Reader
 def load_data():
     # Load the data
 <<<<<<< HEAD
-    data_df = pd.read_excel('tt/[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
+    data_df = pd.read_excel('./[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
 =======
     data_df = pd.read_excel('./[final] April 2015 to Nov 30 2019 - Transformed Jester Data - .xlsx', header=None)
 >>>>>>> e972a789f77eb5f5fcbb96f5b2bab1ca15075b12
